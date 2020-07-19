@@ -16,23 +16,33 @@ namespace SurveySquabbleApp
         {
             InitializeComponent();
         }
+        
+        //Potential security issues associated with public variables noted, but this
+        //is a program that does not need to worry about security for the most part.
+        //This was also my solution to deal with the issue of using forms on separate threads
+        //that need to work together but can't communicate. Not elegant/best practice but works.
 
+        //Strikes 
         public bool strike1;
         public bool strike2;
         public bool strike3;
 
+        //Question Text and Update Flag
         public bool questionUpdated = true;
         public string questionCopy;
 
+        //Number of Answers and Update Flag (for "Show Number of Answers" button)
         public bool answerNumUpdated = true;
         public int numAnswers = 0;
 
+        //Team Scores and Names, and Update Flag
         public bool teamScoreUpdated = true;
         public string team1Name;
         public string team2Name;
         public string team1Score;
         public string team2Score;
 
+        //Individual Answer Scores and Update Flag
         public bool ptsUpdated = true;
         public string pts1;
         public string pts2;
@@ -43,6 +53,7 @@ namespace SurveySquabbleApp
         public string pts7;
         public string pts8;
 
+        //Individual Answer Text and Update Flag
         public bool answerUpdated = true;
         public string ans1;
         public string ans2;
@@ -52,6 +63,10 @@ namespace SurveySquabbleApp
         public string ans6;
         public string ans7;
         public string ans8;
+
+        //I do not know how to use Message Queues, and this timer supplants this for now.
+        //Update flags used so that most of the logic is skipped every tick (each tick happens
+        //every 500ms so we want to cut down on unnecessary processor work).
         private void tmr_MessageQueue_Tick(object sender, EventArgs e)
         {
             ChkStrike1.Checked = strike1;

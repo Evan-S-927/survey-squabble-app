@@ -18,6 +18,9 @@ namespace SurveySquabbleApp
             InitializeComponent();
         }
 
+        //Takes in answer number, answer text and score value as parameters.
+        //Logic is controlled via a switch statement, passes answer/score text to Game instance
+        //and sets flags for them to be updated.
         public static void RevealHandler(int revealNum, string answer, string score)
         {
             switch (revealNum)
@@ -69,6 +72,13 @@ namespace SurveySquabbleApp
             Program.ungaBunga.answerUpdated = false;
             Program.ungaBunga.ptsUpdated = false;
         }
+
+
+        //Called upon check of "Is it Visible?" checkbox for each answer.
+        //Calls ControlDock.RevealHandler with which answer it is, and the answer/score text.
+        //Deactivation logic not written. Maybe to be done by 1.1? Not sure if I'll update this.
+
+        //BUG: answer display gets rid of every other answer
 
         private void ChkVisible1_CheckedChanged(object sender, EventArgs e)
         {
@@ -134,6 +144,9 @@ namespace SurveySquabbleApp
             }
         }
 
+
+        //Strikes are handled in real time without flags because they change so frequently
+        //and are relatively resource light. 
         private void ChkStrike1_CheckedChanged(object sender, EventArgs e)
         {
             Program.ungaBunga.strike1 = ChkStrike1.Checked;
@@ -150,9 +163,9 @@ namespace SurveySquabbleApp
         }
 
 
-        //The "New Question" function. Empties every field in the form.
-        //
-
+        //Called on "New Question" button push. 
+        //Empties every field in both forms that isn't meant to be permanent.
+        //Important cosmetic and QoL function.
         private void BtnNew_Click(object sender, EventArgs e)
         {
 
@@ -217,6 +230,10 @@ namespace SurveySquabbleApp
 
         }
 
+        //Called on "Show Number of Answers" button push.
+        //Trims every input and displays a number for each "valid" answer (has an answer & a score)
+        //Also sets a flag to update these things on the "Game" form.
+        //Important so the players remember how many possible answers there are at a glance.
         private void BtnShowNum_Click(object sender, EventArgs e)
         {
             string[] arrayAns = new string[8];
@@ -255,12 +272,16 @@ namespace SurveySquabbleApp
 
         }
 
+        //Called on "Show Question" button push.
+        //Passes through the Question and sets the flag to update it.
         private void BtnShowQuestion_Click(object sender, EventArgs e)
         {
             Program.ungaBunga.questionCopy = txtQuestion.Text;
             Program.ungaBunga.questionUpdated = false;
         }
 
+        //Called on "Update Scores and Team Names" button push.
+        //Passes through the name and score for each team and sets the flag to update them.
         private void BtnUpdate_Click(object sender, EventArgs e)
         {
             
