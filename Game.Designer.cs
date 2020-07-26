@@ -172,7 +172,6 @@
             this.lbl_Question.Name = "lbl_Question";
             this.lbl_Question.Size = new System.Drawing.Size(760, 34);
             this.lbl_Question.TabIndex = 6;
-            this.lbl_Question.Text = "The question will go here!";
             this.lbl_Question.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lbl_QTitle
@@ -228,9 +227,8 @@
             this.lbl_Pts8.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_Pts8.Location = new System.Drawing.Point(16, 24);
             this.lbl_Pts8.Name = "lbl_Pts8";
-            this.lbl_Pts8.Size = new System.Drawing.Size(41, 29);
+            this.lbl_Pts8.Size = new System.Drawing.Size(0, 29);
             this.lbl_Pts8.TabIndex = 0;
-            this.lbl_Pts8.Text = "88";
             // 
             // groupBox12
             // 
@@ -250,9 +248,8 @@
             this.lbl_Pts7.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_Pts7.Location = new System.Drawing.Point(16, 24);
             this.lbl_Pts7.Name = "lbl_Pts7";
-            this.lbl_Pts7.Size = new System.Drawing.Size(41, 29);
+            this.lbl_Pts7.Size = new System.Drawing.Size(0, 29);
             this.lbl_Pts7.TabIndex = 0;
-            this.lbl_Pts7.Text = "77";
             // 
             // groupBox15
             // 
@@ -303,9 +300,8 @@
             this.lbl_Pts6.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_Pts6.Location = new System.Drawing.Point(16, 24);
             this.lbl_Pts6.Name = "lbl_Pts6";
-            this.lbl_Pts6.Size = new System.Drawing.Size(41, 29);
+            this.lbl_Pts6.Size = new System.Drawing.Size(0, 29);
             this.lbl_Pts6.TabIndex = 0;
-            this.lbl_Pts6.Text = "66";
             // 
             // groupBox13
             // 
@@ -356,9 +352,8 @@
             this.lbl_Pts4.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_Pts4.Location = new System.Drawing.Point(16, 24);
             this.lbl_Pts4.Name = "lbl_Pts4";
-            this.lbl_Pts4.Size = new System.Drawing.Size(41, 29);
+            this.lbl_Pts4.Size = new System.Drawing.Size(0, 29);
             this.lbl_Pts4.TabIndex = 0;
-            this.lbl_Pts4.Text = "44";
             // 
             // groupBox11
             // 
@@ -409,9 +404,8 @@
             this.lbl_Pts3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_Pts3.Location = new System.Drawing.Point(16, 24);
             this.lbl_Pts3.Name = "lbl_Pts3";
-            this.lbl_Pts3.Size = new System.Drawing.Size(41, 29);
+            this.lbl_Pts3.Size = new System.Drawing.Size(0, 29);
             this.lbl_Pts3.TabIndex = 0;
-            this.lbl_Pts3.Text = "33";
             // 
             // groupBox9
             // 
@@ -462,9 +456,8 @@
             this.lbl_Pts2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_Pts2.Location = new System.Drawing.Point(16, 24);
             this.lbl_Pts2.Name = "lbl_Pts2";
-            this.lbl_Pts2.Size = new System.Drawing.Size(41, 29);
+            this.lbl_Pts2.Size = new System.Drawing.Size(0, 29);
             this.lbl_Pts2.TabIndex = 0;
-            this.lbl_Pts2.Text = "22";
             // 
             // groupBox7
             // 
@@ -546,9 +539,8 @@
             this.lbl_Pts1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_Pts1.Location = new System.Drawing.Point(16, 24);
             this.lbl_Pts1.Name = "lbl_Pts1";
-            this.lbl_Pts1.Size = new System.Drawing.Size(41, 29);
+            this.lbl_Pts1.Size = new System.Drawing.Size(0, 29);
             this.lbl_Pts1.TabIndex = 0;
-            this.lbl_Pts1.Text = "11";
             // 
             // groupBox16
             // 
@@ -568,9 +560,8 @@
             this.lbl_Pts5.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_Pts5.Location = new System.Drawing.Point(16, 24);
             this.lbl_Pts5.Name = "lbl_Pts5";
-            this.lbl_Pts5.Size = new System.Drawing.Size(41, 29);
+            this.lbl_Pts5.Size = new System.Drawing.Size(0, 29);
             this.lbl_Pts5.TabIndex = 0;
-            this.lbl_Pts5.Text = "55";
             // 
             // groupBox3
             // 

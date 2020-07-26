@@ -231,44 +231,55 @@ namespace SurveySquabbleApp
         }
 
         //Called on "Show Number of Answers" button push.
-        //Trims every input and displays a number for each "valid" answer (has an answer & a score)
+        //Trims every input and displays a number for each answer, whether it's complete or not.
+        //Initially checked for if the user had entered both before displaying a number,
+        //but was changed so that human error did not appear to be the app's fault.
         //Also sets a flag to update these things on the "Game" form.
         //Important so the players remember how many possible answers there are at a glance.
         private void BtnShowNum_Click(object sender, EventArgs e)
         {
-            string[] arrayAns = new string[8];
-            string[] arrayScore = new string[8];
 
-            arrayAns[0] = txtAnswer1.Text.Trim();
-            arrayAns[1] = txtAnswer2.Text.Trim();
-            arrayAns[2] = txtAnswer3.Text.Trim();
-            arrayAns[3] = txtAnswer4.Text.Trim();
-            arrayAns[4] = txtAnswer5.Text.Trim();
-            arrayAns[5] = txtAnswer6.Text.Trim();
-            arrayAns[6] = txtAnswer7.Text.Trim();
-            arrayAns[7] = txtAnswer8.Text.Trim();
-
-            arrayScore[0] = txtScore1.Text.Trim();
-            arrayScore[1] = txtScore2.Text.Trim();
-            arrayScore[2] = txtScore3.Text.Trim();
-            arrayScore[3] = txtScore4.Text.Trim();
-            arrayScore[4] = txtScore5.Text.Trim();
-            arrayScore[5] = txtScore6.Text.Trim();
-            arrayScore[6] = txtScore7.Text.Trim();
-            arrayScore[7] = txtScore8.Text.Trim();
-
-            int numAnswers = 0;
-
-            for (int i = 0; i < 8; i++)
+            if (txtAnswer1.Text.Trim() != "" || txtScore1.Text.Trim() != "")
             {
-                if(arrayAns[i] != "" && arrayScore[i] != "")
-                {
-                    numAnswers++;
-                }
+                Program.ungaBunga.ans1 = "( 1 )";
+            }
+                        
+            if (txtAnswer2.Text.Trim() != "" || txtScore2.Text.Trim() != "")
+            {
+                Program.ungaBunga.ans2 = "( 2 )";
+            }
+                        
+            if (txtAnswer3.Text.Trim() != "" || txtScore3.Text.Trim() != "")
+            {
+                Program.ungaBunga.ans3 = "( 3 )";
+            }
+                        
+            if (txtAnswer4.Text.Trim() != "" || txtScore4.Text.Trim() != "")
+            {
+                Program.ungaBunga.ans4 = "( 4 )";
+            }
+                        
+            if (txtAnswer5.Text.Trim() != "" || txtScore5.Text.Trim() != "")
+            {
+                Program.ungaBunga.ans5 = "( 5 )";
+            }
+                        
+            if (txtAnswer6.Text.Trim() != "" || txtScore6.Text.Trim() != "")
+            {
+                Program.ungaBunga.ans6 = "( 6 )";
+            }
+                        
+            if (txtAnswer7.Text.Trim() != "" || txtScore7.Text.Trim() != "")
+            {
+                Program.ungaBunga.ans7 = "( 7 )";
+            }
+                        
+            if (txtAnswer8.Text.Trim() != "" || txtScore8.Text.Trim() != "")
+            {
+                Program.ungaBunga.ans8 = "( 8 )";
             }
 
-            Program.ungaBunga.numAnswers = numAnswers;
-            Program.ungaBunga.answerNumUpdated = false;
+            Program.ungaBunga.answerUpdated = false;
 
         }
 

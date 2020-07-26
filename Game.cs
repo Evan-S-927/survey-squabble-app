@@ -73,19 +73,6 @@ namespace SurveySquabbleApp
             ChkStrike2.Checked = strike2;
             ChkStrike3.Checked = strike3;
 
-            if (!answerNumUpdated)
-            {
-                if (numAnswers == 8) lbl_Answer8.Text = "( 8 )";
-                if (numAnswers >= 7) lbl_Answer7.Text = "( 7 )";
-                if (numAnswers >= 6) lbl_Answer6.Text = "( 6 )";
-                if (numAnswers >= 5) lbl_Answer5.Text = "( 5 )";
-                if (numAnswers >= 4) lbl_Answer4.Text = "( 4 )";
-                if (numAnswers >= 3) lbl_Answer3.Text = "( 3 )";
-                if (numAnswers >= 2) lbl_Answer2.Text = "( 2 )";
-                if (numAnswers >= 1) lbl_Answer1.Text = "( 1 )";
-                answerNumUpdated = true;
-            }
-
             if (!teamScoreUpdated)
             {
                 lbl_TeamName1.Text = team1Name;
