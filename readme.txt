@@ -1,6 +1,11 @@
 [ Survey Squabble ] 
 [ (C) Evan S., 2020 ] 
 
+[ Info ]
+I am new to github and do not know how to change the commit message
+for unedited code, but all of it is commented with explanations for
+why I chose to do things in specific ways. 
+
 [ Table of Contents ] 
 1.......Overview 
 2.......How to Set Up a Question & Play 
