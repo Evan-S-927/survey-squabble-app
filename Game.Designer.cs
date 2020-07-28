@@ -692,7 +692,7 @@
             this.Controls.Add(this.pictureBox1);
             this.ForeColor = System.Drawing.SystemColors.Control;
             this.Name = "Game";
-            this.Text = "Survey Squabble";
+            this.Text = "Survey Squabble Game Window";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.gBox_Answers.ResumeLayout(false);
             this.groupBox14.ResumeLayout(false);
