@@ -1,6 +1,8 @@
 # Survey Squabble
 © Evan S., 2020
 
+A video demo and explanation can be found [here](https://youtu.be/P2YqA_gB2_I).
+
 # Info
 I am new to github and do not know how to change the commit message
 for unedited code, but all of it is commented with explanations for
