@@ -25,8 +25,8 @@ Answer incorrectly, they are given a Strike, and on three (3) Strikes,
 that Team is no longer allowed to guess Answers. At the end of a round, 
 the Host updates the Scores.
 
-For more information on what each of these individual buttons do, please 
-click [here](about:blank). For more on Scores, please click [here](about:blank).
+#### For more information on what each of these individual buttons do, please 
+refer to "Buttons". For more on Scores, please refer to "Scores".
 
 # Windows 
 On Startup, Survey Squabble opens two (2) windows: the Game Window & 
